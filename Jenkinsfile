@@ -21,6 +21,15 @@ pipeline {
                 }
             }
        }
+	   
+	    stage ('maven test') {
+            steps {
+                withMaven(maven : 'a maven') {
+                sh 'mvn test'
+                }
+            }
+       }
+
 
         stage ('Build') {
             steps {
