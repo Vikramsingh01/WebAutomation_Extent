@@ -35,12 +35,12 @@ public class BrowserFactory extends InitMethod
 		switch(Browser.toLowerCase())
 		{
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 
 		case "chrome_headless":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");  
 			chromeOptions.addArguments("--disable-gpu");  
