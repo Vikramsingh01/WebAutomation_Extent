@@ -35,7 +35,7 @@ public class BrowserFactory extends InitMethod
 		switch(Browser.toLowerCase())
 		{
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", "/usr/bin/chrome‌​driver");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 			break;
 
